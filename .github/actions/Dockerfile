@@ -13,7 +13,7 @@ RUN apt-get update && \
 
 # Clone ARM-TTK Repo
 RUN git clone https://github.com/Azure/arm-ttk.git
-RUN git clone https://github.com/whaakman/Demo-WebApp-ISVs.git /temp
+RUN git clone https://github.com/whaakman/armttk-github-action-demo.git /temp
 
 COPY entrypoint.ps1 /entrypoint.ps1
 

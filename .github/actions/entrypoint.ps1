@@ -8,5 +8,13 @@ $TestResults = Test-AzTemplate -TemplatePath $TemplatePath
 # We only want to return failures
 $TestFailures =  $TestResults | Where-Object { -not $_.Passed }
 Write-host "::set-output name=results::Hello!"
-Write-Output $TestFailures
-exit 1
+
+if ($TestFailures) {
+    Write-host "Yup"
+    exit 1
+} 
+
+else {
+    Write-Host "Nope"
+    exit 0
+}
