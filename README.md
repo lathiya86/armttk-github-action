@@ -1,6 +1,6 @@
 # Github action running ARM-TTK in a Docker container
 
-![.github/workflows/main.yml](https://github.com/whaakman/armttk-github-action-demo/workflows/.github/workflows/main.yml/badge.svg)
+![.github/workflows/main.yml](https://github.com/whaakman/armttk-github-action-demo/workflows/.github/workflows/ARM%20Tests/badge.svg)
 
 This demo leverages the Azure Resource Manager Template Toolkit (ARM-TTK) (https://github.com/Azure/arm-ttk) and runs the toolkit against the files in the repository. 
 
