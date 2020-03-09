@@ -7,14 +7,18 @@ $TemplatePath = '/temp/'
 $TestResults = Test-AzTemplate -TemplatePath $TemplatePath
 # We only want to return failures
 $TestFailures =  $TestResults | Where-Object { -not $_.Passed }
+
 Write-host "::set-output name=results::Hello!"
 
 if ($TestFailures) {
-    Write-host "Yup"
+    Write-Host "One or more templates did not pass the selected tests:"
+    $TestFailures.file.name | select-object -unique
+    Write-Host "Results:"
+    Write-Output $TestFailures
     exit 1
 } 
 
 else {
-    Write-Host "Nope"
+    Write-Host "All files passed!"
     exit 0
 }
