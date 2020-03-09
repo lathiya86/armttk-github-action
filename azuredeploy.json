@@ -12,7 +12,7 @@
     "variables": {},
     "resources": [
         {
-            "name": "storageaccount1",
+            "name": "storageaccount2",
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2019-06-01",
             "location": "[parameters('location')]",
