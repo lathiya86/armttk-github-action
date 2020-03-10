@@ -1,3 +1,5 @@
+# Name the workflow
+name: ARM Tests
 on:
  push:
   branches:
@@ -11,7 +13,7 @@ jobs:
       # To use this repository's private action, you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
-      - name: run ARM TTK
+      - name: Run ARM TTK
         uses: ./.github/actions
         id: action
 

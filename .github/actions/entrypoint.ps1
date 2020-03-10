@@ -8,8 +8,6 @@ $TestResults = Test-AzTemplate -TemplatePath $TemplatePath
 # We only want to return failures
 $TestFailures =  $TestResults | Where-Object { -not $_.Passed }
 
-Write-host "::set-output name=results::Hello!"
-
 # If files are returning invalid configurations
 # Using exit code "1" to let Github actions node the test failed
 if ($TestFailures) {
