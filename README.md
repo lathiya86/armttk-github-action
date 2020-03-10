@@ -5,5 +5,3 @@
 This demo leverages the Azure Resource Manager Template Toolkit (ARM-TTK) (https://github.com/Azure/arm-ttk) and runs the toolkit against the files in the repository. 
 
 The container is build from mcr.microsoft.com/powershell:latest and the Entrypoint file can contain as much PowerShell goodness as you like. 
-
-Build for testing / learning purposes and will improve once I learn more :)
