@@ -1,3 +1,4 @@
+# Name the workflow
 name: ARM Tests
 on:
  push:

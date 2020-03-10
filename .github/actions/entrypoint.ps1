@@ -20,7 +20,7 @@ if ($TestFailures) {
     exit 1
 } 
 
-# Else, all passes and exit using exit code 0
+# Else, all passes and exit using exit code 0 indicating a success
 else {
     Write-Host "All files passed!"
     exit 0
