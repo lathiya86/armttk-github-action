@@ -10,6 +10,8 @@ $TestFailures =  $TestResults | Where-Object { -not $_.Passed }
 
 Write-host "::set-output name=results::Hello!"
 
+# If files are returning invalid configurations
+# Using exit code "1" to let Github actions node the test failed
 if ($TestFailures) {
     Write-Host "One or more templates did not pass the selected tests:"
     $TestFailures.file.name | select-object -unique
@@ -18,6 +20,7 @@ if ($TestFailures) {
     exit 1
 } 
 
+# Else, all passes and exit using exit code 0
 else {
     Write-Host "All files passed!"
     exit 0
