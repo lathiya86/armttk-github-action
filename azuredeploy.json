@@ -14,7 +14,7 @@
         {
             "name": "storageaccount1",
             "type": "Microsoft.Storage/storageAccounts",
-            "apiVersion": "2015-06-15",
+            "apiVersion": "2019-06-01",
             "location": "[parameters('location')]",
             "tags": {
                 "displayName": "storageaccount1"
