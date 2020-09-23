@@ -4,6 +4,7 @@ on:
  push:
   branches:
     - master
+  paths: ".github/workflows/main.yml"
 
 jobs:
   test_arm_templates:
