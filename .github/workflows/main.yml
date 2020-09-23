@@ -3,7 +3,8 @@ name: ARM Tests
 on:
  push:
   branches:
-    - master
+    - development
+    - dev
   paths: ".github/workflows/main.yml"
 
 jobs:
